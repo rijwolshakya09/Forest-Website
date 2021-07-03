@@ -1,0 +1,990 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+/* HOME DESIGN */
+.home{
+    position: relative;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 800px;
+}
+.header{
+    position: absolute;
+    padding:1em 3em 1em;
+    width: 100%;
+    background: transparent;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+/* .navbar{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 1050px;
+} */
+.active a{
+    color:#a3c962;
+}
+.logo h1 a{
+    float: left;
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: capitalize;
+    display: initial;
+    margin: 0;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 6px;
+    font-weight: 600;
+}
+nav ul {
+    float: right;
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+nav ul li{
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: initial;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    padding: 7px 16px 0px;
+}
+nav a:hover{
+    color:#a3c962;
+}
+/* Home Information Design */
+.information{
+    padding:19em 0 0;
+    justify-content: center;
+    text-align: center;
+}
+.banner h4{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.information h2{
+    margin: 13px 0px 16px;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.information p{
+    font-size: 18px;
+    text-shadow: 2px 2px 10px black;
+    letter-spacing: 0px;
+    padding: 0em 9em;
+    line-height: 27px;
+}
+/* Button */
+.buttonaboutcontain{
+    display: flex;
+    justify-content: center;
+}
+.abtbtn a, .ctnbtn a, button.buttonaboutcontain {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-flex;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius:20px;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+}
+.ctnbtn a,button.buttonaboutcontain {
+    background-color:#a3c962;
+    color: #fff;
+}
+.abtbtn a {
+    background: #fff;
+    color:#a3c962;
+    margin-right: 22px;
+}
+.abtbtn a:hover, .ctnbtn a:hover,button.buttonaboutcontain:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* About Design */
+.about{
+    display: flex;
+    justify-content: center;
+}
+.title {
+    padding: 50px;
+    font-size:37px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight:400;
+    text-align: center;
+    text-transform: capitalize;
+}
+.ttltext {
+    font-size: 25px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    padding-bottom: 5px;
+}
+.subtitle h3 {
+    font-size: 25px;
+    color: #000;
+    font-weight: 700;
+    }
+.paragraph p {
+    font-size: 15px;
+    color: #676662;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+.main-content{
+    display: inline-flex;
+    justify-content: center;
+}
+.abtimg{
+    width: 100%;
+    transition: all 1s ease ;
+    padding: 25px;
+}
+.infobox{
+    display: inline-block;
+    justify-content: center;
+    width: 600px;
+    padding: 0px 15px;
+    margin: 50px;
+}
+.rightsideinfo h6{
+    font-size: 24px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 200;
+    line-height: 34px;
+}
+.rightsideinfo p{
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 28px;
+}
+.percentboxtext{
+    display: flex;
+}
+.progressbar{
+    padding: 0 15px;
+    height: 186px;
+    width: 190px;
+}
+.progress1{
+    height: 150px ;
+    width: 150px ;
+    border-radius: 50%;
+    border: 2px solid rgb(91, 195, 233) ;
+}
+.progress2{
+    height: 150px ;
+    width: 150px ;
+    border-radius: 50%;
+    border: 2px solid rgb(120, 236, 120) ;
+}
+.progress3{
+    height: 150px ;
+    width: 150px ;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 238, 0) ;
+}
+.progressprct{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 125px ;
+    width: 125px ;
+    border-radius: 50%;
+    border: 2px solid #c9c4c4 ;
+}
+#pr1 p{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 35px;
+    color: rgb(91, 195, 233);
+}
+#pr2 p{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 35px;
+    color: rgb(120, 236, 120);
+}
+#pr3 p{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 34px;
+    color: rgb(255, 238, 0);
+}
+
+
+.progressname h4{
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    margin: 14px 0 0;
+}
+
+/* Service Design */
+.service{
+    padding: 24px 0;
+    position: relative;
+    background: url("images/service.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 750px;
+}
+.container{
+    padding: 48px 15px;
+    margin: 0px 141.5px;
+}
+.titlepart{
+    margin: 0px 0px 48px;
+    padding: 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+}
+.slogan{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.slogan h6{
+    font-size: 20px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    }
+.slogan h3{
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    padding-bottom: 5px;
+}
+.desc{
+    padding: 0px 15px;
+}
+.desc p {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    margin: 8px;
+}
+.boxcontainer{
+    width: 350px;
+    height: 230px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 32px 24px;
+    margin: 15px;
+    box-shadow: -1px 0px 1px black;
+    transition: 0.5s all;
+    }
+.boxcontainer:hover{
+    background:#dadada;
+}
+.boxcontainer i{
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+    transition: 0.5s all;
+
+}
+.explanation h4{
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 8px 0px 0px;
+}
+.explanation p{
+    font-size: 18px;
+    color: #000;
+    margin:16px 0px 0px;
+}
+/* Stats Design */
+.stats{
+    background-color: #a3c962;
+    height: 243px;
+    padding: 24px 0px;
+    color: white;
+}
+.statscontainer{
+    display: flex;
+    justify-content: center;
+    padding: 48px 15px;
+    font-size: 26px;
+}
+.fact{
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 15px;
+    margin: 0px 90px 90px 0px;
+    width: 355.75px;
+    height: 99px;
+}
+.number{
+    font-size: 23px;
+    color: #000;
+    }
+/* Feature Design */
+
+.feature{
+    position: relative;
+    padding: 24px 0px;
+    /* width: 1423px;
+    height: 746px; */
+}
+.featurecontainer{
+    justify-content: center;
+    /* width: 1140px;
+    height: 698px; */
+    padding: 48px 15px;
+    margin: 0px 141.5px;
+}
+.titlepart1{
+    margin: 0px 0px 48px;
+    padding: 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+}
+.slogan1{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.slogan1 h6{
+    font-size: 20px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    }
+.slogan1 h3{
+    font-size: 38px;
+    color: black;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    padding-bottom: 5px;
+}
+.desc1{
+    padding: 0px 15px;
+}
+.desc1 p {
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+/* Feature Content Design */
+.featurecontent{
+    display: flex;
+    justify-content: center;
+}
+.ftcntcontainer{
+    padding: 20px ;
+    background: #f7f7f7;
+    border-radius: 10px;
+    margin: 0px 0px 24px;
+    box-shadow:-3px 7px 39px -5px rgb(0, 0, 0);
+    width: 635px;
+    height: 138px;
+}
+.ftimg{
+    width: 475px;
+    height: 462px;
+    padding: 0px 15px;
+}
+.ftcnt{
+    padding: 0px 15px;
+}
+.ftbox{
+    display: flex;
+}
+.ftlogo i{
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 40px;
+    color: #000000;
+    line-height: 97px;
+    width: 208.33px;
+    height: 98px;
+}
+.ftexp{
+    padding: 0px 15px;
+    width: 416.66px;
+    height: 98px;
+}
+.ftexp h4{
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 8px 0px 0px;
+}
+.ftexp p{
+    font-size: 18px;
+    color: #000;
+    margin:16px 0px 0px;
+}
+/* Price Design */
+.price{
+    padding: 24px 0px;
+    background: url(images/display.jpg)no-repeat center;
+    background-size: cover;
+}
+.pricecontainer{
+    justify-content: center;
+    margin: 0px 261px;
+    padding: 48px 15px;
+}
+.titlepart2{
+    margin: 0px 0px 48px;
+    padding: 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+}
+.slogan2{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.slogan2 h6{
+    font-size: 20px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    }
+.slogan2 h3{
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    padding-bottom: 5px;
+}
+.desc2{
+    padding: 0px 15px;
+}
+.desc2 p {
+    font-size: 18px;
+    color: #D8D8D8;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+/* Price Content Design */
+.pricemain{
+    display: flex;
+    justify-content: center;
+}
+.pricecontent{
+    padding: 0px 15px;
+}
+.prcntbox {
+    width: 255px;
+    height: 368px;
+    background:#fff;
+    padding: 1.5em 1.5em;
+    box-shadow: 0 0 8px 0 rgba(161, 161, 161, 0.5);
+    text-align: center;
+}
+.prtitle h4{ 
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 8px 0px 0px;
+}
+.prpr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #000;
+}
+.prpr span.sup {
+    font-size:16px;
+    color:#565656;
+}
+.prpr span.number-price {
+    font-size:32px;
+    color:#a3c962;
+    font-weight:600;
+}
+.pricelist ul li {
+    font-size: 13px;
+    color: #969696;
+    padding-top: 11px;
+    display: block;
+}
+.pricelist{
+    margin-bottom: 30px;
+}
+/* Clients */
+.clients{
+    position: relative;
+    padding: 24px 0px;
+    /* width: 1423px;
+    height: 746px; */
+}
+.clientscontainer{
+    justify-content: center;
+    margin: 0px 261px;
+    padding: 48px 15px;
+}
+.titlepart3{
+    margin: 0px 0px 48px;
+    padding: 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+}
+.slogan3{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.slogan3 h6{
+    font-size: 20px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    }
+.slogan3 h3{
+    font-size: 38px;
+    color: black;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    padding-bottom: 5px;
+}
+.desc3{
+    padding: 0px 15px;
+}
+.desc3 p {
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+/* Clients Content Design */
+.clientsmain{
+    display: flex;
+    justify-content: center;
+}
+.clientscontent{
+    padding: 0px 15px;
+}
+.img-thumbnail{
+    background: white;
+    border:1px gray;
+    padding: 4px;
+}
+.clientinfo{
+    margin: 24px 0 8px;
+}
+.clientinfo h4{
+    font-size: 25px;
+    color: #a3c962;
+    font-weight: 600;
+    /* margin: 0px 0px 8px;
+    padding-bottom: 5px; */
+}
+.clientinfo h6{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+    margin: 8px 0px 0px;
+    line-height: 28px;
+}
+.clientinfo p{
+    font-size: 14px;
+    color: #4c4c4c;
+    letter-spacing: 1px;
+    margin: 16px 0px 0px;
+    line-height: 28px;
+}
+/* Video Design */
+.video{
+    background-color: #a3c962;
+    height: 334px;
+    padding: 24px 0px;
+    color: white;
+}
+.videocontainer{
+    text-align: center;
+    margin: 0px 261px;
+    padding: 48px 15px;
+    font-size: 26px;
+}
+.icon i {
+    font-size: 35px;
+}
+.vidtxt{
+    margin: 48px 0px 0px;
+}
+.vidtxt h4 {
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+}
+.vidtxt p{
+    font-size: 14px;
+    color: #4c4c4c;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+/* Teams Design */
+.teams{
+    position: relative;
+    padding: 24px 0px;
+}
+.teamscontainer{
+    justify-content: center;
+    padding: 48px 15px;
+    margin: 0px 189px;
+}
+.titlepart3{
+    margin: 0px 0px 48px;
+    padding: 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+}
+.slogan3{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.slogan3 h6{
+    font-size: 20px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    }
+.slogan3 h3{
+    font-size: 38px;
+    color: black;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+    padding-bottom: 5px;
+}
+.desc3{
+    padding: 0px 15px;
+}
+.desc3 p {
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+
+/* Teams Content Design */
+.teamsmain{
+    display: flex;
+    justify-content: center;
+}
+.teamscontent{
+    padding: 0px 15px;
+}
+.tmtxt{
+    margin: 24px 0px 0px;
+    text-align: center;
+}
+.tmtxt h4{ 
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+}
+.tmtxt p{
+    font-size:16px;
+    color:#565656;
+}
+.tmlst ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 8px 0px 0px;
+}
+.tmlst ul li i,.tmlst ul li a i{  
+    margin-right: 0.5em;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    text-align:center;
+    line-height: 37px;
+    background:#000;
+    border-radius:50px;
+    color:#fff;
+    transition: 0.5s all;
+}
+.tmlst ul li i:hover,.tmlst ul li a i:hover{  
+    color:#a3c962;
+}
+/* BLog Design */
+.blog{
+    padding: 24px 0px;
+    background: url(images/b1.jpg)no-repeat center;
+    background-size: cover;
+}
+.blogcontainer{
+    justify-content: center;
+    margin: 0px 261px;
+    padding: 48px 15px;
+}
+.blogmain{
+    display: flex;
+    justify-content: center;
+}
+.blogcontent{
+    padding: 0px 15px;
+}
+.blogbox {
+    width: 350px;
+    height: 482.5px;
+    background: #fff;
+    padding: 20px;
+}
+.blogcover img{
+    width: 310px;
+    height: 232.5px;
+}
+.bloginfo h6{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+    margin: 16px 0px 8px;
+    line-height: 28px;
+}
+.bloginfo h4 a{ 
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: #a3c962;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+}
+.bloginfo p{
+    margin: 16px 0 0;
+    font-size: 14px;
+    color: #4c4c4c;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.blgftct{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.date-tag a,.commant-tag a{
+    margin: 12px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    }
+/* Contact Design */
+.contact{
+    position: relative;
+    padding: 24px 0px;
+}
+.contactcontainer{
+    justify-content: center;
+    padding: 48px 15px;
+    margin: 0px 261px;
+}
+.contactcontent{
+    display: flex;
+    justify-content: center;
+}
+.contactform{
+    display: block;
+    width: 570px ;
+    height: 384.56px;
+    padding: 0px 15px;
+}
+.contact-forms{
+    padding: 12.6px 9.8px;
+    width: 100%;
+}
+.contact-forms input, .contact-forms textarea {
+    width: 540px ;
+    height: 46.19px;
+    font-size: 14px;
+    color: #000;
+    padding: .9em .7em;
+    background: #efefef;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    outline: none !important;
+    box-shadow: 0px 1px 1px 0px black;
+}
+.contact-forms textarea {
+    resize: none;
+    height:10em;
+}
+.submit {
+    width: 540px ;
+    height: 42px;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-flex;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius:20px;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+}
+.submit{
+    background-color:#a3c962;
+    color: #fff;
+}
+.submit:hover{
+    background: #000;
+    color: #fff;
+}
+.addressform{
+    display: inline-block;
+    width: 570px ;
+    height: 384.56px;
+    padding: 0px 15px;
+}
+.addresscontainer{
+    block-size: 140px;
+}
+.addressbox{
+    display: flex;
+}
+.addressinfo{
+    width: 427.5px ;
+    height: 97px;
+    padding: 0px 15px;
+}
+.addressicon{
+    padding: 0px 15px;
+}
+.addressicon i{
+    text-align: center;
+    width: 112.5px ;
+    height: 97px;
+    font-size: 40px;
+    color: #000000;
+    line-height: 97px;
+}
+.addressinfo h6{
+    font-size: 22px;
+    font-weight: 700;
+    color: #a3c962;
+    padding: 0 0 16px;
+}
+.addressinfo p,.addressinfo p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 28px;
+    }
+
+/* Map Design */
+.address-map iframe {
+    position: block;
+    width: 100%;
+    height: 21.5em;
+    border:1px solid #dadada;
+    padding:7px;
+}
+/* Footer Design */
+.footer{
+    background-color: #a3c962;
+    height: 190px;
+    padding: 24px 0px;
+    color: white;
+}
+.footercontainer{
+    text-align: center;
+    
+    font-size: 26px;
+}
+.footertext p {
+    padding: 15px 0 15px 0;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.footertext p a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footertext p a {
+    text-decoration: none;
+    font-weight:400;
+    color:#000;
+}
+.footericon ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 8px 0px 0px;
+}
+.footericon ul li i,.footericon ul li a i{  
+    margin-right: 0.5em;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    text-align:center;
+    line-height: 37px;
+    background:#000;
+    border-radius:50px;
+    color:#fff;
+    transition: 0.5s all;
+}
+.footericon ul li i:hover,.footericon ul li a i:hover{  
+    color:#a3c962;
+}
+/* Move Top */
+.moveicon{
+    padding-top: 20px ;
+}
+.moveicon a{
+    width: 40px;
+    height: 40px;
+    background: url(images/arrow.png) no-repeat 0px 0px;
+    display: inline-block;
+}
